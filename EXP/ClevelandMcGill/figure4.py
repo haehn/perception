@@ -38,7 +38,7 @@ class Figure4:
   def data_to_type1(data):
     '''
     '''
-    barchart = np.zeros((100,100), dtype=np.bool)
+    barchart = np.zeros((100,100), dtype=bool)
 
     # now we need 8 more pairs
     all_values = [0] * 10
@@ -79,8 +79,10 @@ class Figure4:
       barchart[rr, cc] = 1
       
       if i == 1 or i == 2:
+
+        # print(left_bar+b_width/2,left_bar+b_width/2+1)
         # mark the max
-        barchart[94:95, left_bar+b_width/2:left_bar+b_width/2+1] = 1
+        barchart[94:95, left_bar+b_width//2:left_bar+b_width//2+1] = 1
 
     return barchart
 
@@ -88,7 +90,7 @@ class Figure4:
   def data_to_type3(data):
     '''
     '''
-    barchart = np.zeros((100,100), dtype=np.bool)
+    barchart = np.zeros((100,100), dtype=bool)
 
     # now we need 8 more pairs
     all_values = [0] * 10
@@ -139,7 +141,7 @@ class Figure4:
   def data_to_type2(data):
     '''
     '''
-    barchart = np.zeros((100,100), dtype=np.bool)
+    barchart = np.zeros((100,100), dtype=bool)
 
     # we build the barchart to the top
     all_values = [0] * 10
@@ -219,7 +221,7 @@ class Figure4:
   def data_to_type4(data):
     '''
     '''
-    barchart = np.zeros((100,100), dtype=np.bool)
+    barchart = np.zeros((100,100), dtype=bool)
 
     # we build the barchart to the top
     all_values = [0] * 10
@@ -325,7 +327,7 @@ class Figure4:
   def data_to_type5(data):
     '''
     '''
-    barchart = np.zeros((100,100), dtype=np.bool)
+    barchart = np.zeros((100,100), dtype=bool)
 
     # we build the barchart to the top
     all_values = [0] * 10
